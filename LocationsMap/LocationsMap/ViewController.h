@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PDLocationsMapViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <PDLocationsMapDataSource, PDLocationsMapDelegate> {
+    
+}
 
+- (IBAction)showLocations:(id)sender;
 @end

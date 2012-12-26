@@ -23,6 +23,9 @@
 		0EC739D8168A0900000D67B3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC739D7168A0900000D67B3 /* MapKit.framework */; };
 		0EC739DF168A1296000D67B3 /* PDLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC739DE168A1296000D67B3 /* PDLocation.m */; };
 		0EC739E1168A134C000D67B3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC739E0168A134C000D67B3 /* CoreLocation.framework */; };
+		45836E7A168AF1AE00EF2D63 /* mappin.png in Resources */ = {isa = PBXBuildFile; fileRef = 45836E79168AF1AE00EF2D63 /* mappin.png */; };
+		45DA2F90168AB1E300F56018 /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DA2F8F168AB1E300F56018 /* MapPoint.m */; };
+		45DDB3FC168B1A16005555D0 /* close-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 45DDB3FB168B1A16005555D0 /* close-button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,10 @@
 		0EC739DD168A1296000D67B3 /* PDLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDLocation.h; path = PDLocationsMap/PDLocation.h; sourceTree = "<group>"; };
 		0EC739DE168A1296000D67B3 /* PDLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDLocation.m; path = PDLocationsMap/PDLocation.m; sourceTree = "<group>"; };
 		0EC739E0168A134C000D67B3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		45836E79168AF1AE00EF2D63 /* mappin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mappin.png; sourceTree = "<group>"; };
+		45DA2F8E168AB1E300F56018 /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoint.h; sourceTree = "<group>"; };
+		45DA2F8F168AB1E300F56018 /* MapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPoint.m; sourceTree = "<group>"; };
+		45DDB3FB168B1A16005555D0 /* close-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-button.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,11 +134,15 @@
 		0EC739D1168A07FC000D67B3 /* PDLocationsMap */ = {
 			isa = PBXGroup;
 			children = (
+				45DA2F8E168AB1E300F56018 /* MapPoint.h */,
+				45DA2F8F168AB1E300F56018 /* MapPoint.m */,
 				0EC739D2168A0863000D67B3 /* PDLocationsMapViewController.h */,
 				0EC739D3168A0863000D67B3 /* PDLocationsMapViewController.m */,
 				0EC739D4168A0863000D67B3 /* PDLocationsMapViewController.xib */,
 				0EC739DD168A1296000D67B3 /* PDLocation.h */,
 				0EC739DE168A1296000D67B3 /* PDLocation.m */,
+				45DDB3FB168B1A16005555D0 /* close-button.png */,
+				45836E79168AF1AE00EF2D63 /* mappin.png */,
 			);
 			name = PDLocationsMap;
 			sourceTree = "<group>";
@@ -193,6 +204,8 @@
 				0EC739C5168A07AC000D67B3 /* Default-568h@2x.png in Resources */,
 				0EC739CB168A07AC000D67B3 /* ViewController.xib in Resources */,
 				0EC739D6168A0863000D67B3 /* PDLocationsMapViewController.xib in Resources */,
+				45836E7A168AF1AE00EF2D63 /* mappin.png in Resources */,
+				45DDB3FC168B1A16005555D0 /* close-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +221,7 @@
 				0EC739C8168A07AC000D67B3 /* ViewController.m in Sources */,
 				0EC739D5168A0863000D67B3 /* PDLocationsMapViewController.m in Sources */,
 				0EC739DF168A1296000D67B3 /* PDLocation.m in Sources */,
+				45DA2F90168AB1E300F56018 /* MapPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +302,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocationsMap/LocationsMap-Prefix.pch";
 				INFOPLIST_FILE = "LocationsMap/LocationsMap-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -299,6 +314,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocationsMap/LocationsMap-Prefix.pch";
 				INFOPLIST_FILE = "LocationsMap/LocationsMap-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -323,6 +339,7 @@
 				0EC739D0168A07AC000D67B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

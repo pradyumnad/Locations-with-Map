@@ -25,6 +25,7 @@
     __unsafe_unretained id <PDLocationsMapDelegate>delegate;
 }
 
+@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapGesture;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -33,6 +34,7 @@
 
 @property (nonatomic, assign) __unsafe_unretained id <PDLocationsMapDataSource>dataSource;
 @property (nonatomic, assign) __unsafe_unretained id <PDLocationsMapDelegate>delegate;
+@property (weak, nonatomic) IBOutlet UIButton *closeButton;
 
 - (id)initWithDelegate:(id)delegate andDataSource:(id)dataSource;
 @end
