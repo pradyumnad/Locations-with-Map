@@ -53,9 +53,9 @@ static CGPoint MapCenter;
     // Do any additional setup after loading the view from its nib.
     MapCenter = self.mapView.center;
     MapOriginalFrame = self.mapView.frame;
-    CGSize size = self.view.frame.size;
+    
+    CGSize size = [UIScreen mainScreen].bounds.size;
     MapFullFrame = CGRectMake(0, 0, size.width, size.height);
-    MapFullFrame = self.view.frame;
     
     self.closeButton.hidden = YES;
     
@@ -213,11 +213,19 @@ static CGPoint MapCenter;
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        
         cell.textLabel.font = [UIFont fontWithName:@"Futura" size:15.0f];
         cell.textLabel.textColor = [UIColor darkGrayColor];
+        
         cell.detailTextLabel.textColor = [UIColor lightGrayColor];
         cell.detailTextLabel.font = [UIFont fontWithName:@"Futura" size:13.0f];
+        
+        UILabel *distanceLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100.0, 25.0)];
+        distanceLabel.font = [UIFont fontWithName:@"Futura" size:12.0f];
+        distanceLabel.backgroundColor = [UIColor clearColor];
+        distanceLabel.textColor = [UIColor grayColor];
+        distanceLabel.textAlignment = UITextAlignmentRight;
+        cell.accessoryView = distanceLabel;
     }
     
     [self configureCell:cell atIndexPath:indexPath];
@@ -240,6 +248,7 @@ static CGPoint MapCenter;
     NSAssert([pdLocation isKindOfClass:[PDLocation class]], @"DataSource must provide array of PDLocations");
     
     cell.textLabel.text = pdLocation.name;
+    cell.detailTextLabel.text = pdLocation.description;
     
     CLLocation *location = [[CLLocation alloc] initWithLatitude:pdLocation.location.latitude longitude:pdLocation.location.longitude];
     
@@ -247,7 +256,8 @@ static CGPoint MapCenter;
     if (distance == 0) {
         
     } else {
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"%.01f Km", distance/1000];
+        UILabel *distanceLabel = (UILabel *)cell.accessoryView;
+        distanceLabel.text = [NSString stringWithFormat:@"%.01f Km", distance/1000];
     }
 }
 
