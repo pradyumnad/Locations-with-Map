@@ -5,8 +5,8 @@ This is similar to Foursquare style of showing Location list with Mapview.
 
 PDLocationsMapViewController is used to provide an interface as shown in the delow screen shot. 
 <br>
-<img src="https://github.com/pradyumnad/Locations-with-Map/Screen_1.png">
-<img src="https://github.com/pradyumnad/Locations-with-Map/Screen_2.png">
+<img src="https://github.com/pradyumnad/Locations-with-Map/master/Screen_1.png">
+<img src="https://github.com/pradyumnad/Locations-with-Map/master/Screen_2.png">
 
 Including into Project
 -----------------------
