@@ -31,10 +31,6 @@
 - (IBAction)showLocations:(id)sender {
     PDLocationsMapViewController *locationsMapViewController = [[PDLocationsMapViewController alloc] initWithDelegate:self andDataSource:self];
     [self presentModalViewController:locationsMapViewController animated:YES];
-    
-//    UIApplication *application = [NSApplication sharedApplication];
-//    NSWindow *keyWindow = [application keyWindow];
-//    [keyWindow miniaturize:keyWindow];
 }
 
 #pragma mark -
