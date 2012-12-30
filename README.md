@@ -1,7 +1,7 @@
 Locations-with-Map
 ==================
 
-This is similar to Foursquare style of showing Location list with Mapview.
+A Design pattern to show the locations and map in an efficient way, the UI mimics Foursquare's checkin view.
 
 PDLocationsMapViewController is used to provide an interface as shown in the delow screen shot. 
 <br>
