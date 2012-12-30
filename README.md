@@ -5,8 +5,9 @@ A Design pattern to show the locations and map in an efficient way, the UI mimic
 
 PDLocationsMapViewController is used to provide an interface as shown in the delow screen shot. 
 <br>
-<img src="https://github.com/pradyumnad/Locations-with-Map/master/Screen_1.png">
-<img src="https://github.com/pradyumnad/Locations-with-Map/master/Screen_2.png">
+<img src="https://raw.github.com/pradyumnad/Locations-with-Map/master/Screen_1.png"><br><br>
+When tapped on map, map enlarges as shown in the below screen shot.<br>
+<img src="https://raw.github.com/pradyumnad/Locations-with-Map/master/Screen_2.png">
 
 Including into Project
 -----------------------
