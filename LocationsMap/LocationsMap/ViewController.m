@@ -42,9 +42,9 @@
 #pragma mark PDLocationsMapView
 
 - (NSArray *)locationsForShowingInLocationsMap {
-    PDLocation *loc1 = [[PDLocation alloc] initWithName:@"Mexico City" description:@"Mexiko-Stadt" andLocation:CLLocationCoordinate2DMake(19.428472427036, -99.12766456604)];
-    PDLocation *loc2 = [[PDLocation alloc] initWithName:@"Port Harcourt" description:@"Seat of a first-order administrative divisiong" andLocation:CLLocationCoordinate2DMake(4.777423, 7.013404)];
-    PDLocation *loc3 = [[PDLocation alloc] initWithName:@"India" description:@"The most populous democracy in the world" andLocation:CLLocationCoordinate2DMake(17.04, 78.87)];
+    PDLocation *loc1 = [[PDLocation alloc] initWithName:@"Agra" description:@"A city on the Jumna River in Uttar Pradesh state, northern India; pop. 899,000. Once the capital of the Mogul empire 1566–1658, it is the site of the Taj Mahal" andLocation:CLLocationCoordinate2DMake(27.177023,78.007862)];
+    PDLocation *loc2 = [[PDLocation alloc] initWithName:@"Kanyakumari" description:@"Kanyakumari is a town in Kanyakumari district in Tamil Nadu state, India. Located at the southernmost tip of the Indian Peninsula, its former name was Cape Comorin" andLocation:CLLocationCoordinate2DMake(8.092881,77.538388)];
+    PDLocation *loc3 = [[PDLocation alloc] initWithName:@"Mysore" description:@"Mysore is a tourism hot spot within the state of Karnataka and also acts as a base for other tourist places in the vicinity of the city." andLocation:CLLocationCoordinate2DMake(12.303442,76.64023)];
 
     return [NSArray arrayWithObjects:loc1, loc2, loc3, nil];
 }
