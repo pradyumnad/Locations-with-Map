@@ -29,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E17581B169092EA00E38EAE /* PDLocationsMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDLocationsMap.h; path = PDLocationsMap/PDLocationsMap.h; sourceTree = "<group>"; };
 		0EC739AA168A07AC000D67B3 /* LocationsMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationsMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EC739AE168A07AC000D67B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0EC739B0168A07AC000D67B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -143,6 +144,7 @@
 				0EC739DE168A1296000D67B3 /* PDLocation.m */,
 				45DDB3FB168B1A16005555D0 /* close-button.png */,
 				45836E79168AF1AE00EF2D63 /* mappin.png */,
+				0E17581B169092EA00E38EAE /* PDLocationsMap.h */,
 			);
 			name = PDLocationsMap;
 			sourceTree = "<group>";

@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "PDLocationsMapViewController.h"
-#import "PDLocation.h"
+#import "PDLocationsMap.h"
 #import "AppDelegate.h"
 
 @interface ViewController ()
