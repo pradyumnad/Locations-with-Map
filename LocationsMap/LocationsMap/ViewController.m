@@ -42,9 +42,9 @@
 #pragma mark PDLocationsMapView
 
 - (NSArray *)locationsForShowingInLocationsMap {
-    PDLocation *loc1 = [[PDLocation alloc] initWithName:@"Test 1" description:@"Nothing but a G thang" andLocation:CLLocationCoordinate2DMake(17.85f, 85.56f)];
-    PDLocation *loc2 = [[PDLocation alloc] initWithName:@"Test 2" description:@"Nothing but a G thang" andLocation:CLLocationCoordinate2DMake(35.51, 77.814)];
-    PDLocation *loc3 = [[PDLocation alloc] initWithName:@"Test 3" description:@"Nothing but a G thang" andLocation:CLLocationCoordinate2DMake(6.74, 93.84)];
+    PDLocation *loc1 = [[PDLocation alloc] initWithName:@"Mexico City" description:@"Mexiko-Stadt" andLocation:CLLocationCoordinate2DMake(19.428472427036, -99.12766456604)];
+    PDLocation *loc2 = [[PDLocation alloc] initWithName:@"Port Harcourt" description:@"Seat of a first-order administrative divisiong" andLocation:CLLocationCoordinate2DMake(4.777423, 7.013404)];
+    PDLocation *loc3 = [[PDLocation alloc] initWithName:@"India" description:@"The most populous democracy in the world" andLocation:CLLocationCoordinate2DMake(17.04, 78.87)];
 
     return [NSArray arrayWithObjects:loc1, loc2, loc3, nil];
 }
