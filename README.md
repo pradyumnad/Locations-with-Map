@@ -40,9 +40,12 @@ Returns the index of location selected.
 	
    	}
    	
+Contact
+-------
+Follow [@pradyumna_d](http://twitter.com/pradyumna_d) on Twitter for the latest news.
 
 License
----------
+------------
 
 THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS CREATIVE COMMONS PUBLIC LICENSE ("CCPL" OR "LICENSE"). THE WORK IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE OF THE WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW IS PROHIBITED.
 
